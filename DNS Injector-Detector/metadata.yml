@@ -1,0 +1,12 @@
+---
+:id: 207178761
+:submitters:
+- :name: Nygel Sotomayor
+  :email: nsotom3@uic.edu
+:created_at: !ruby/object:ActiveSupport::TimeWithZone
+  utc: 2023-10-28 04:46:47.821246000 Z
+  zone: !ruby/object:ActiveSupport::TimeZone
+    name: America/Los_Angeles
+  time: 2023-10-27 21:46:47.821246000 Z
+:status: processed
+:score: 16.5

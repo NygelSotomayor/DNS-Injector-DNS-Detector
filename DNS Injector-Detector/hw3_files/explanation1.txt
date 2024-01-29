@@ -1,0 +1,7 @@
+My approach for my dnsinject program split into 3 main methods. First was reading in the arguments into the command line and 
+succesfully reading in the file and breaking up the hostname file properly. I used argparse for that which I refered to this page https://docs.python.org/3/howto/argparse.html.
+Then after I mainly refered to https://scapy.readthedocs.io/en/latest/index.html for help with implementing the packet reading/construction. I used the sniff function to actively,
+sniff packets on the chosen interface, and to be able to run functions in response to every recieved packet. I essentially check every packet for whether it was TCP or UDP and whether or not it had a dns response.
+And if it did I just injected the ip given in the hostname and referenced all the other needed info to craft our packet.
+
+I also want to note one main error I encountered doing this that took me too long to figure out. I wasn't able to perform an injection succesfully at all until I switched networks from my 6ghz fiber internet to a 2.4ghz repeater.

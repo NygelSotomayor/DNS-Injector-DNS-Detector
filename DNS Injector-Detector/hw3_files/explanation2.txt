@@ -1,0 +1,5 @@
+What I did at first is quite similar to what I did in my dnsinjecting program, first I parse the arguments into the command line and 
+succesfully reading in the file and accepting the tracefile file properly. I used argparse for that which I refered to this page https://docs.python.org/3/howto/argparse.html.
+Then according to what arguments are satisfied I call sniff accordingly, if tracefile is provided, I utilize the offline function which has not been tested honestly.
+Then I call my dns_detector function in sniff, where I look at each packet and store it to a dictionary where I check each packet against every other packet in the dictionary and look for incosnsistencies,
+in the DNSRR and if found I will print out the packets information. This part of the program should in theory work but I couldn't get it to perform consistently at all, it leaves much to be desired.

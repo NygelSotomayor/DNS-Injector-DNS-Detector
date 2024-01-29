@@ -1,0 +1,2 @@
+We are able to determine which packets are spoofed based off of information in the packet such as incosistencies with the Response Code (RCODE),
+or differing IP's shown in the Response Data (RDATA). Through looking for incosistencies in these packets we can determine what packets are authentic or not.
